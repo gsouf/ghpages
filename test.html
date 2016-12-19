@@ -3,10 +3,13 @@
 <body>
 
   <script>
-    console.log(navigator.vibrate);
-    navigator.vibrate([500]);
+    var vibrate = function(){
+      navigator.vibrate([500, 200, 500, 200, 500, 200]);
+    }
   </script>
-
+  
+  <button onclick="vibrate" >VIBRER</button>
+  
 </body>
 
 </html>
